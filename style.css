@@ -4,17 +4,22 @@ body {
 h1 {
     font-size: 10rem;
 }
-a {
+a, button {
     background-color: greenyellow;
     border: none;
     border-radius: 10px;
     padding: 1.25rem 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
     font-family: inherit;
     font-size: 2rem;
     color: white;
     text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+a:hover, button:hover {
+    color: greenyellow;
+    background-color: white;
 }
 p {
     font-size: 2rem;
@@ -23,4 +28,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.selected {
+    background-color: green;
 }
